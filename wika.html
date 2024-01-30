@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀  𝓈𝓅𝑒𝓇𝓂𝒶  🎀 </title>
+    <link rel="stylesheet" href="styl.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            color: #333;
+            overflow: hidden; 
+        }
+
+        #flyButton {
+            background-color: #a7119a;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="flyButton">ODPOWIEDZ: TAK</button>
+
+    <script>
+        const flyButton = document.getElementById('flyButton');
+
+
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        const buttonWidth = flyButton.offsetWidth;
+        const buttonHeight = flyButton.offsetHeight;
+
+        const initialPositionX = (windowWidth - buttonWidth) / 2;
+        const initialPositionY = (windowHeight - buttonHeight) / 2;
+
+        flyButton.style.left = initialPositionX + 'px';
+        flyButton.style.top = initialPositionY + 'px';
+
+   
+        function setButtonPosition() {
+            const newPositionX = Math.floor(Math.random() * windowWidth);
+            const newPositionY = Math.floor(Math.random() * windowHeight);
+
+            flyButton.style.left = newPositionX + 'px';
+            flyButton.style.top = newPositionY + 'px';
+        }
+
+        flyButton.addEventListener('click', setButtonPosition);
+    </script>
+
+    <header>
+        <h1>Wiktoria chroszcz</h1>     
+    </header>
+    <section>
+        
+        <h2>Cześć Kochanie!</h2>
+        <p>MAM PYTANIE</p>
+        <p>CZY BEDZIESZ MOJA WALENTYNKA</p>
+        <p>ODP WAZNE!</p>
+        <img src="jawika.jpg" alt="Obrazek Miłości"> <img src="boing.png" alt="b">
+    </section>
+
+    <footer>
+        <p>jebac kurwe kordackiego raz dwa trzy</p>
+    </footer>
+</body>
+</html>

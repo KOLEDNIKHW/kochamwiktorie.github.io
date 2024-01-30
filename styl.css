@@ -1,0 +1,37 @@
+header {
+    background-color: #e74c3c; /* Kolor tła */
+    color: white; /* Kolor tekstu */
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+section {
+    background-color: rgba(red, green, blue, 0.7)
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    background-color: pink;
+    padding: 20px;
+
+}
+p{
+    background-color: rgb(14, 212, 202);
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+footer{
+    padding: 1px;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+body{
+    background-size: cover;
+    background-image: url('idealne.jpg')
+
+}
